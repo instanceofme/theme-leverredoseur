@@ -1,16 +1,23 @@
 <header id="logo" class="page-wrap">
     {{#if @blog.logo}}
-    	<a id="logo-image" href="{{@blog.url}}">
-    		<img src="{{@blog.logo}}" alt="{{@blog.title}} - {{@blog.description}}" />
-    	</a>
+    <a id="logo-image" href="{{@blog.url}}">
+      <img src="{{@blog.logo}}" alt="{{@blog.title}} - {{@blog.description}}" />
+    </a>
     {{else}}
-	    <h1 class="blog-title">
-	    	<a href="{{@blog.url}}">{{@blog.title}}</a>
-	    </h1>
-	    <h2 class="blog-desc">
-	    	<a href="{{@blog.url}}">{{@blog.description}}</a>
-	    </h2>
+      <h1 class="blog-title">
+        <a href="{{@blog.url}}">{{@blog.title}}</a>
+      </h1>
+      <h2 class="blog-desc">
+        <a href="{{@blog.url}}">{{@blog.description}}</a>
+      </h2>
 
-	    <small>Free Ghost Theme</small>
+      <small>
+        <a href="/">Accueil</a>
+        • <a href="/tag/entrees/">Entrées</a>
+        • <a href="/tag/plats/">Plats</a>
+        • <a href="/tag/desserts/">Desserts</a>
+        • <a href="/le-projet/">Le projet</a>
+        • <a href="/les-blogueuses/">Les blogueuses</a>
+      </small>
     {{/if}}
 </header>
